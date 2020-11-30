@@ -4,7 +4,7 @@ from textblob import TextBlob
 def mensajesusuario(usuario):
     "Función para obtener los mensajes de un usuario"
     query = {"user": {"$eq": f"{usuario}"}}
-    mensajitos = list(collection.find(query, {"group": 1, "message": 1, "user": 1}))
+    mensajitos = list(collection.find(query, {"_id": 0, "message": 1, "user": 1}))
     return mensajitos
 
 def diferentesusuarios():

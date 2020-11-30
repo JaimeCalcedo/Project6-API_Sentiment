@@ -28,8 +28,9 @@ def inserta_mensaje():
 #ENDPOINTS DE GET
 @app.route("/mensajes/<usuario>")
 def usuario_mensajes(usuario):
-    mensajes = get.mensajesusuario(usuario)
-    return json.dumps(mensajes)
+    info = get.mensajesusuario(usuario)
+    return json.dumps(info)
+
 
 @app.route("/usuarios")
 def usuarios_whatsapp():

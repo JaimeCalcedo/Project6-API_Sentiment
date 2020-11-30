@@ -7,7 +7,12 @@ un método GET para extraer los datos deseados por el usuario de la base de dato
 
 ### POST
 Endpoint:
-    - /nuevomensaje : con este endpoint, a través de un diccionario podemos añadir un mensaje, especificando el grupo de whatsapp, el usuario que lo envía y el contenido del mensaje. 
+    - /nuevomensaje : con este endpoint, a través de un diccionario podemos añadir un mensaje, especificando el grupo de whatsapp, el usuario que lo envía y el contenido del mensaje.
 
 ### GET 
-Endpoints 
+Endpoints:
+    - /mensajes/<"usuario"> : con este endpoint podemos especificar un usuario, y nos devolverá todos los mensajes enviados por el. 
+
+    - /usuarios : con este endppoint podemos obtener todos los miembros de los diferentes grupos de whatsapp.
+
+    -/mensajes2/<grupo> : con este endpoint podemos especificar un grupo, y nos devolverá todos los mensajes enviados en ese grupo.  
